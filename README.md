@@ -6,7 +6,7 @@
 <ul>Platinum Ingot</ul>
 <ul>Platinum Nugget</ul>
 <h4>New Foods</h4>
-<ul>Iton Apple<sup>1</sup></ul>
+<ul>Iron Apple<sup>1</sup></ul>
 <ul>Diamond Apple<sup>1</sup></ul>
 <ul>Netherite Apple<sup>1</sup></ul>
 <ul>Emerald Apple<sup>1</sup></ul>
@@ -27,4 +27,4 @@
 <ul>(to be added)</ul>
 <h3>Future Plans</h3>
 <p>Planning on adding many many more things like placeable milk, vertical slabs, aether, and netherite fusions!</p>
-<sup>1</sup><p>With Enchanted Varients
+<p><sup>1</sup>With Enchanted Varients</p>
