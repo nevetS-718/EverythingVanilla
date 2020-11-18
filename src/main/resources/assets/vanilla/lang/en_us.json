@@ -1,0 +1,17 @@
+{
+    "block.vanilla.gold_infused_netherite_block": "Gold Infused Netherite Block",
+    "item.vanilla.raw_villager_meat": "Raw Villager Meat",
+    "item.vanilla.cooked_villager_meat": "Cooked Villager Meat",
+    "item.vanilla.emerald_pickaxe": "Emerald Pickaxe",
+    "item.vanilla.emerald_axe": "Emerald Axe",
+    "item.vanilla.emerald_shovel": "Emerald Shovel",
+    "item.vanilla.emerald_hoe": "Emerald Hoe",
+    "item.vanilla.emerald_sword": "Emerald Sword",
+    "item.vanilla.emerald_helmet": "Emerald Helmet",
+    "item.vanilla.emerald_chestplate": "Emerald Chestplate",
+    "item.vanilla.emerald_leggings": "Emerald Leggings",
+    "item.vanilla.emerald_boots": "Emerald Boots",
+    "itemGroup.vanilla.all": "All",
+    "item.vanilla.platinum_ingot": "Platinum Ingot",
+    "block.vanilla.platinum_ore": "Platinum Ore"
+}

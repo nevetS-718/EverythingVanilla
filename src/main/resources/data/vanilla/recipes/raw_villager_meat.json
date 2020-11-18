@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "leatherite:raw_villager_meat"
+  },
+  "result": "leatherite:cooked_villager_meat",
+  "experience": 0.3,
+  "cookingtime": 200
+}

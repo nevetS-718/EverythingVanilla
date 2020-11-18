@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "vanilla",
+  "version": "${version}",
+
+  "name": "Everything Vanilla",
+  "description": "This mod includes everything that should be in vanilla that Mojang just won't add.",
+  "authors": [
+    "Steven Tracey"
+  ],
+  "contact": {
+    "homepage": "https://flamebitco.me/",
+    "sources": "https://github.com/nevetS-718/EverythingVanilla"
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/vanilla/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.nevets.everythingvanilla.Main"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.7.4",
+    "fabric": "*",
+    "minecraft": "1.16.x"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
