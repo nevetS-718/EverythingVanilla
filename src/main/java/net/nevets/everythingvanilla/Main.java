@@ -29,6 +29,7 @@ import net.nevets.everythingvanilla.items.CookedVillagerMeat;
 import net.nevets.everythingvanilla.items.PlatinumIngot;
 import net.nevets.everythingvanilla.items.PlatinumNugget;
 import net.nevets.everythingvanilla.items.RawVillagerMeat;
+import net.nevets.everythingvanilla.items.IronApple;
 import net.nevets.everythingvanilla.tools.*;
 
 public class Main implements ModInitializer {
@@ -59,6 +60,7 @@ public class Main implements ModInitializer {
     public static final Item PLATINUMNUGGET = new PlatinumNugget(new Item.Settings().group(Main.ALL));
     public static final Block PLATINUMBLOCK = new PlatinumBlock();
     public static final ArmorMaterial PLATINUM_ARMOR = new PlatinumArmorMaterial();
+    public static final IRONAPPLE = new IronApple();
 
     //Platinum Ore Generation
     private static ConfiguredFeature<?, ?> ORE_PLATINUM_OVERWORLD = Feature.ORE
@@ -108,6 +110,7 @@ public class Main implements ModInitializer {
         //Food
         Registry.register(Registry.ITEM, new Identifier("vanilla", "raw_villager_meat"), RAWVILLAGERMEAT);
         Registry.register(Registry.ITEM, new Identifier("vanilla", "cooked_villager_meat"), COOKEDVILLAGERMEAT);
+        Registry.register(Registry.ITEM, new Identifier("vanilla", "iron_apple"), IRONAPPLE);
         //Ore Generation
         RegistryKey<ConfiguredFeature<?, ?>> orePlatinumOverworld = RegistryKey.of(Registry.CONFIGURED_FEATURE_WORLDGEN,
                 new Identifier("vanilla", "ore_platinum_overworld"));
