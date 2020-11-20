@@ -1,6 +1,6 @@
 package net.nevets.everythingvanilla.items;
 
-import net.minecraft.item;
+import net.minecraft.item.Item;
 
 public class EnchantedDiamondApple extends Item {
 
