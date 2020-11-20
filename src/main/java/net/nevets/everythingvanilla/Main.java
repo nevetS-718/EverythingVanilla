@@ -61,7 +61,14 @@ public class Main implements ModInitializer {
     public static final Block PLATINUMBLOCK = new PlatinumBlock();
     public static final ArmorMaterial PLATINUM_ARMOR = new PlatinumArmorMaterial();
     public static final IRONAPPLE = new IronApple();
-
+    public static final ENCHANTEDIRONAPPLE = new EnchantedIronApple();
+    public static final DIAMONDAPPLE = new DiamondApple();
+    public static final ENCHANTEDDIAMONDAPPLE = new EnchantedDiamondApple();
+    public static final EMERALDAPPLE = new EmeraldApple();
+    public static final ENCHANTEDEMERALDAPPLE = new EnchantedEmeraldApple();
+    public static final PLATINUMAPPLE = new PlatinumApple();
+    public static final ENCHANTEDPLATINUMAPPLE = new EnchantedPlatinumApple();
+    
     //Platinum Ore Generation
     private static ConfiguredFeature<?, ?> ORE_PLATINUM_OVERWORLD = Feature.ORE
             .configure(new OreFeatureConfig(
@@ -111,6 +118,13 @@ public class Main implements ModInitializer {
         Registry.register(Registry.ITEM, new Identifier("vanilla", "raw_villager_meat"), RAWVILLAGERMEAT);
         Registry.register(Registry.ITEM, new Identifier("vanilla", "cooked_villager_meat"), COOKEDVILLAGERMEAT);
         Registry.register(Registry.ITEM, new Identifier("vanilla", "iron_apple"), IRONAPPLE);
+        Registry.register(Registry.ITEM, new Identifier("vanilla", "enchanted_iron_apple"), ENCHANTEDIRONAPPLE);
+        Registry.register(Registry.ITEM, new Identifier("vanilla", "diamond_apple"), DIAMONDAPPLE);
+        Registry.register(Registry.ITEM, new Identifier("vanilla", "enchanted_diamond_apple"), ENCHANTEDDIAMONDAPPLE);
+        Registry.register(Registry.ITEM, new Identifier("vanilla", "emerald_apple"), EMERALDAPPLE);
+        Registry.register(Registry.ITEM, new Identifier("vanilla", "enchanted_emerald_apple"), ENCHANTEDEMERALDAPPLE);
+        Registry.register(Registry.ITEM, new Identifier("vanilla", "platinum_apple"), PLATINUMAPPLE);
+        Registry.register(Registry.ITEM, new Identifier("vanilla", "enchanted_platinum_apple"), ENCHANTEDPLATINUMAPPLE);
         //Ore Generation
         RegistryKey<ConfiguredFeature<?, ?>> orePlatinumOverworld = RegistryKey.of(Registry.CONFIGURED_FEATURE_WORLDGEN,
                 new Identifier("vanilla", "ore_platinum_overworld"));
