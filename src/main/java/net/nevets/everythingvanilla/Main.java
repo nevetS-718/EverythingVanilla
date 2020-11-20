@@ -60,14 +60,14 @@ public class Main implements ModInitializer {
     public static final Item PLATINUMNUGGET = new PlatinumNugget(new Item.Settings().group(Main.ALL));
     public static final Block PLATINUMBLOCK = new PlatinumBlock();
     public static final ArmorMaterial PLATINUM_ARMOR = new PlatinumArmorMaterial();
-    public static final IRONAPPLE = new IronApple();
-    public static final ENCHANTEDIRONAPPLE = new EnchantedIronApple();
-    public static final DIAMONDAPPLE = new DiamondApple();
-    public static final ENCHANTEDDIAMONDAPPLE = new EnchantedDiamondApple();
-    public static final EMERALDAPPLE = new EmeraldApple();
-    public static final ENCHANTEDEMERALDAPPLE = new EnchantedEmeraldApple();
-    public static final PLATINUMAPPLE = new PlatinumApple();
-    public static final ENCHANTEDPLATINUMAPPLE = new EnchantedPlatinumApple();
+    public static final Item IRONAPPLE = new IronApple();
+    public static final Item ENCHANTEDIRONAPPLE = new EnchantedIronApple();
+    public static final Item DIAMONDAPPLE = new DiamondApple();
+    public static final Item ENCHANTEDDIAMONDAPPLE = new EnchantedDiamondApple();
+    public static final Item EMERALDAPPLE = new EmeraldApple();
+    public static final Item ENCHANTEDEMERALDAPPLE = new EnchantedEmeraldApple();
+    public static final Item PLATINUMAPPLE = new PlatinumApple();
+    public static final Item ENCHANTEDPLATINUMAPPLE = new EnchantedPlatinumApple();
     
     //Platinum Ore Generation
     private static ConfiguredFeature<?, ?> ORE_PLATINUM_OVERWORLD = Feature.ORE
