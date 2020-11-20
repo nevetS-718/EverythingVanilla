@@ -4,9 +4,9 @@ import net.minecraft.item.Item;
 
 public class EnchantedIronApple extends Item {
 
-  public EnchantedIronApple(Settings item$Settings_1) { 
+  public EnchantedIronApple(Settings settings) { 
 
-    super(item$Settings_1); 
+    super(settings); 
   
   }
 
