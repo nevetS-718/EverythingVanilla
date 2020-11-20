@@ -1,6 +1,6 @@
 package net.nevets.everythingvanilla.items;
 
-import net.mineceraft.item.Item;
+import net.minecraft.item.Item;
 
 public class EnchantedEmeraldApple extends Item {
 
