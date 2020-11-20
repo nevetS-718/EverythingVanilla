@@ -6,7 +6,7 @@
         "entries": [
           {
             "type": "minecraft:item",
-            "name": "leatherite:gold_infused_netherite_block"
+            "name": "vanilla:gold_infused_netherite_block"
           }
         ],
         "conditions": [

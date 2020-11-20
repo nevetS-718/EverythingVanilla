@@ -6,7 +6,7 @@
         {
           "type": "item",
           "weight": 1,
-          "name": "leatherite:raw_villager_meat",
+          "name": "vanilla:raw_villager_meat",
           "functions": [
             {
               "function": "set_count",

@@ -1,20 +1,19 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "#",
-    "/",
-    "/"
+    "XX",
+    "X#",
+    " #"
   ],
   "key": {
     "#": {
-      "item": "minecraft:emerald"
-    },
-    "/": {
       "item": "minecraft:stick"
+    },
+    "X": {
+      "item": "vanilla:platinum_ingot"
     }
   },
   "result": {
-    "item": "vanilla:emerald_shovel",
-    "count": 1
+    "item": "vanilla:platinum_axe"
   }
 }

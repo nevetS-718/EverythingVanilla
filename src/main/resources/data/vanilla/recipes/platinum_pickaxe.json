@@ -1,20 +1,20 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "#",
-    "/",
-    "/"
+    "###",
+    " / ",
+    " / "
   ],
   "key": {
     "#": {
-      "item": "minecraft:emerald"
+      "item": "vanilla:platinum_ingot"
     },
     "/": {
       "item": "minecraft:stick"
     }
   },
   "result": {
-    "item": "vanilla:emerald_shovel",
+    "item": "vanilla:platinum_pickaxe",
     "count": 1
   }
 }

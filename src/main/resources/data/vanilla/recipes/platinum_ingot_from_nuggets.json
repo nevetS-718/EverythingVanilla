@@ -1,17 +1,17 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "# #",
+    "###",
     "###",
     "###"
   ],
   "key": {
     "#": {
-      "item": "minecraft:emerald"
+      "item": "vanilla:platinum_nugget"
     }
   },
   "result": {
-    "item": "vanilla:emerald_chestplate",
+    "item": "vanilla:platinum_ingot",
     "count": 1
   }
 }

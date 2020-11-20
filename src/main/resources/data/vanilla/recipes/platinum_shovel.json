@@ -7,14 +7,14 @@
   ],
   "key": {
     "#": {
-      "item": "minecraft:emerald"
+      "item": "vanilla:platinum_ingot"
     },
     "/": {
       "item": "minecraft:stick"
     }
   },
   "result": {
-    "item": "vanilla:emerald_shovel",
+    "item": "vanilla:platinum_shovel",
     "count": 1
   }
 }

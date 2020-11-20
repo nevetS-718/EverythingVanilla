@@ -2,16 +2,15 @@
   "type": "minecraft:crafting_shaped",
   "pattern": [
     "# #",
-    "###",
-    "###"
+    "# #"
   ],
   "key": {
     "#": {
-      "item": "minecraft:emerald"
+      "item": "vanilla:platinum_ingot"
     }
   },
   "result": {
-    "item": "vanilla:emerald_chestplate",
+    "item": "vanilla:platinum_boots",
     "count": 1
   }
 }

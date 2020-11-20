@@ -7,11 +7,11 @@
   ],
   "key": {
     "#": {
-      "item": "minecraft:emerald"
+      "item": "vanilla:platinum_ingot"
     }
   },
   "result": {
-    "item": "vanilla:emerald_chestplate",
+    "item": "vanilla:platinum_chestplate",
     "count": 1
   }
 }
