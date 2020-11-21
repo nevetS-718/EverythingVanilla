@@ -8,6 +8,6 @@ import net.nevets.everythingvanilla.Main;
 
 public class BaseArmor extends ArmorItem {
     public BaseArmor(ArmorMaterial material, EquipmentSlot slot) {
-        super(material, slot, new Item.Settings().group(Main.ALL));
+        super(material, slot, new Item.Settings().group(Main.COMBAT));
     }
 }
