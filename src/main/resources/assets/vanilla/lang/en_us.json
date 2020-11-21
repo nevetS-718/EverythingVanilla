@@ -27,5 +27,13 @@
     "item.vanilla.platinum_axe": "Platinum Axe",
     "item.vanilla.platinum_shovel": "Platinum Shovel",
     "item.vanilla.platinum_hoe": "Platinum Hoe",
-    "item.vanilla.platinum_sword": "Platinum Sword"
+    "item.vanilla.platinum_sword": "Platinum Sword",
+    "item.vanilla.iron_apple": "Iron Apple",
+    "item.vanilla.enchanted_iron_apple": "Enchanted Iron Apple",
+    "item.vanilla.diamond_apple": "Diamond Apple",
+    "item.vanilla.enchanted_diamond_apple": "Enchanted Diamond Apple",
+    "item.vanilla.emerald_apple": "Emerald Apple",
+    "item.vanilla.enchanted_emerald_apple": "Enchanted Emerald Apple",
+    "item.vanilla.platinum_apple": "Platinum Apple",
+    "item.vanilla.enchanted_platinum_apple": "Enchanted Platinum Apple"
 }
