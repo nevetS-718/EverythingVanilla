@@ -10,6 +10,7 @@ import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.*;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.Rarity;
 import net.minecraft.util.registry.BuiltinRegistries;
 import net.minecraft.util.registry.Registry;
 import net.minecraft.util.registry.RegistryKey;
@@ -25,11 +26,7 @@ import net.nevets.everythingvanilla.armor.PlatinumArmorMaterial;
 import net.nevets.everythingvanilla.blocks.GoldNetheriteBlock;
 import net.nevets.everythingvanilla.blocks.PlatinumOre;
 import net.nevets.everythingvanilla.blocks.PlatinumBlock;
-import net.nevets.everythingvanilla.items.CookedVillagerMeat;
-import net.nevets.everythingvanilla.items.PlatinumIngot;
-import net.nevets.everythingvanilla.items.PlatinumNugget;
-import net.nevets.everythingvanilla.items.RawVillagerMeat;
-import net.nevets.everythingvanilla.items.IronApple;
+import net.nevets.everythingvanilla.items.*;
 import net.nevets.everythingvanilla.tools.*;
 
 public class Main implements ModInitializer {
@@ -60,27 +57,27 @@ public class Main implements ModInitializer {
     public static final Item PLATINUMNUGGET = new PlatinumNugget(new Item.Settings().group(Main.ALL));
     public static final Block PLATINUMBLOCK = new PlatinumBlock();
     public static final ArmorMaterial PLATINUM_ARMOR = new PlatinumArmorMaterial();
-    public static final Item IRONAPPLE = new IronApple();
-    public static final Item ENCHANTEDIRONAPPLE = new EnchantedIronApple();
-    public static final Item DIAMONDAPPLE = new DiamondApple();
-    public static final Item ENCHANTEDDIAMONDAPPLE = new EnchantedDiamondApple();
-    public static final Item EMERALDAPPLE = new EmeraldApple();
-    public static final Item ENCHANTEDEMERALDAPPLE = new EnchantedEmeraldApple();
-    public static final Item PLATINUMAPPLE = new PlatinumApple();
-    public static final Item ENCHANTEDPLATINUMAPPLE = new EnchantedPlatinumApple();
-    
+    public static final Item IRONAPPLE = new IronApple(new Item.Settings().group(Main.FOOD).rarity(Rarity.RARE).food(new FoodComponent.Builder().hunger(6).saturationModifier(10f).statusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 20*120, 1), 1f).build()));
+    public static final Item ENCHANTEDIRONAPPLE = new EnchantedIronApple(new Item.Settings().group(Main.FOOD).rarity(Rarity.EPIC).food(new FoodComponent.Builder().hunger(6).saturationModifier(10f).statusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 20*120, 2), 1f).build()));
+    public static final Item DIAMONDAPPLE = new DiamondApple(new Item.Settings().group(Main.FOOD).rarity(Rarity.RARE).food(new FoodComponent.Builder().hunger(8).saturationModifier(14f).statusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 20*120, 5), 1f).build()));
+    public static final Item ENCHANTEDDIAMONDAPPLE = new EnchantedDiamondApple(new Item.Settings().group(Main.FOOD).rarity(Rarity.EPIC).food(new FoodComponent.Builder().hunger(8).saturationModifier(14f).statusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 20*120, 6), 1f).build()));
+    public static final Item EMERALDAPPLE = new EmeraldApple(new Item.Settings().group(Main.FOOD).rarity(Rarity.RARE).food(new FoodComponent.Builder().hunger(12).saturationModifier(16f).statusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 20*120, 3), 1f).build()));
+    public static final Item ENCHANTEDEMERALDAPPLE = new EnchantedEmeraldApple(new Item.Settings().group(Main.FOOD).rarity(Rarity.EPIC).food(new FoodComponent.Builder().hunger(12).saturationModifier(16f).statusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 20*120, 4), 1f).build()));
+    public static final Item PLATINUMAPPLE = new PlatinumApple(new Item.Settings().group(Main.FOOD).rarity(Rarity.RARE).food(new FoodComponent.Builder().hunger(16).saturationModifier(18f).statusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 20*120, 7), 1f).build()));
+    public static final Item ENCHANTEDPLATINUMAPPLE = new EnchantedPlatinumApple(new Item.Settings().group(Main.FOOD).rarity(Rarity.EPIC).food(new FoodComponent.Builder().hunger(16).saturationModifier(18f).statusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 20*120, 8), 1f).build()));
+
     //Platinum Ore Generation
     private static ConfiguredFeature<?, ?> ORE_PLATINUM_OVERWORLD = Feature.ORE
             .configure(new OreFeatureConfig(
                     OreFeatureConfig.Rules.BASE_STONE_OVERWORLD,
                     Main.PLATINUMORE.getDefaultState(),
-                    1)) //vein size
+                    3)) // vein size
             .decorate(Decorator.RANGE.configure(new RangeDecoratorConfig(
-                    0, //bottom offset
-                    7, //min y level
-                    12))) //max y level
+                    0, // bottom offset
+                    0, // min y level
+                    15))) // max y level
             .spreadHorizontally()
-            .repeat(1); //number of veins per chunk
+            .repeat(2); // number of veins per chunk
 
     @Override
     public void onInitialize() {
@@ -127,7 +124,7 @@ public class Main implements ModInitializer {
         Registry.register(Registry.ITEM, new Identifier("vanilla", "enchanted_platinum_apple"), ENCHANTEDPLATINUMAPPLE);
         //Ore Generation
         RegistryKey<ConfiguredFeature<?, ?>> orePlatinumOverworld = RegistryKey.of(Registry.CONFIGURED_FEATURE_WORLDGEN,
-                new Identifier("vanilla", "ore_platinum_overworld"));
+                new Identifier("vanilla", "platinum_ore_overworld"));
         Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, orePlatinumOverworld.getValue(), ORE_PLATINUM_OVERWORLD);
         BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.UNDERGROUND_ORES, orePlatinumOverworld);
     }
