@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "iii",
+    "iAi",
+    "iii"
+  ],
+  "key": {
+    "i": {
+      "item": "vanilla:platinum_block"
+    },
+    "A": {
+      "item": "minecraft:apple"
+    }
+  },
+  "result": {
+    "item": "vanilla:enchanted_platinum_apple",
+    "count": 1
+  }
+}
