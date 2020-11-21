@@ -44,3 +44,4 @@ public class EmeraldArmorMaterial implements ArmorMaterial {
         return 0f;
     }
 }
+
