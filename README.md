@@ -1,6 +1,6 @@
 <h1>Everything Vanilla</h1>
 <h3>About</h3>
-<p>Everything Vanilla is a mod that adds everything that you wanted in vanilla that Mojand just won't add! This is one of my first mod so keep that in mind while using!</p>
+<p>Everything Vanilla is a mod that adds everything that you wanted in vanilla that Mojang just won't add! This is one of my first mod so keep that in mind while using!</p>
 <h3>Mod Details</h3>
 <h4>New Items</h4>
 <ul>Platinum Ingot</ul>
