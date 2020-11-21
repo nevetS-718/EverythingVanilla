@@ -1,5 +1,3 @@
-package net.nevets.everythingvanilla.tools;
-
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
 import net.nevets.everythingvanilla.Main;
@@ -30,4 +28,3 @@ public class PlatinumToolMaterial implements ToolMaterial {
         return Ingredient.ofItems(Main.PLATINUMINGOT);
     }
 }
-
