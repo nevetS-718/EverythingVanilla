@@ -10,4 +10,8 @@ public class EnchantedDiamondApple extends Item {
 
     }
 
+    public boolean hasGlint(ItemStack item) {
+        return true;
+    }
+    
 }
