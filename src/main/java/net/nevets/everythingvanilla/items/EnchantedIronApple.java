@@ -8,5 +8,9 @@ public class EnchantedIronApple extends Item {
 
         super(settings);
     }
-
+    
+    public boolean hasGlint(ItemStack stack) {
+        return true;
+    }
+    
 }
