@@ -63,8 +63,10 @@ public class Main implements ModInitializer {
     public static final Item ENCHANTEDDIAMONDAPPLE = new EnchantedDiamondApple(new Item.Settings().group(Main.FOOD).rarity(Rarity.EPIC).food(new FoodComponent.Builder().hunger(8).saturationModifier(14f).statusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 20*120, 6), 1f).build()));
     public static final Item EMERALDAPPLE = new EmeraldApple(new Item.Settings().group(Main.FOOD).rarity(Rarity.RARE).food(new FoodComponent.Builder().hunger(12).saturationModifier(16f).statusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 20*120, 3), 1f).build()));
     public static final Item ENCHANTEDEMERALDAPPLE = new EnchantedEmeraldApple(new Item.Settings().group(Main.FOOD).rarity(Rarity.EPIC).food(new FoodComponent.Builder().hunger(12).saturationModifier(16f).statusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 20*120, 4), 1f).build()));
-    public static final Item PLATINUMAPPLE = new PlatinumApple(new Item.Settings().group(Main.FOOD).rarity(Rarity.RARE).food(new FoodComponent.Builder().hunger(16).saturationModifier(18f).statusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 20*120, 7), 1f).build()));
-    public static final Item ENCHANTEDPLATINUMAPPLE = new EnchantedPlatinumApple(new Item.Settings().group(Main.FOOD).rarity(Rarity.EPIC).food(new FoodComponent.Builder().hunger(16).saturationModifier(18f).statusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 20*120, 8), 1f).build()));
+    public static final Item NETHERITEAPPLE = new NetheriteApple(new Item.Settings().group(Main.FOOD).rarity(Rarity.RARE).food(new FoodComponent.Builder().hunger(12).saturationModifier(16f).statusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 20*120, 7), 1f).build()));
+    public static final Item ENCHANTEDNETHERITEAPPLE = new EnchantedNetheriteApple(new Item.Settings().group(Main.FOOD).rarity(Rarity.EPIC).food(new FoodComponent.Builder().hunger(14).saturationModifier(18f).statusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 20*120, 8), 1f).build()));
+    public static final Item PLATINUMAPPLE = new PlatinumApple(new Item.Settings().group(Main.FOOD).rarity(Rarity.RARE).food(new FoodComponent.Builder().hunger(16).saturationModifier(20f).statusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 20*120, 9), 1f).build()));
+    public static final Item ENCHANTEDPLATINUMAPPLE = new EnchantedPlatinumApple(new Item.Settings().group(Main.FOOD).rarity(Rarity.EPIC).food(new FoodComponent.Builder().hunger(16).saturationModifier(20f).statusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 20*120, 10), 1f).build()));
 
     //Platinum Ore Generation
     private static ConfiguredFeature<?, ?> ORE_PLATINUM_OVERWORLD = Feature.ORE
@@ -120,6 +122,8 @@ public class Main implements ModInitializer {
         Registry.register(Registry.ITEM, new Identifier("vanilla", "enchanted_diamond_apple"), ENCHANTEDDIAMONDAPPLE);
         Registry.register(Registry.ITEM, new Identifier("vanilla", "emerald_apple"), EMERALDAPPLE);
         Registry.register(Registry.ITEM, new Identifier("vanilla", "enchanted_emerald_apple"), ENCHANTEDEMERALDAPPLE);
+        Registry.register(Registry.ITEM, new Identifier("vanilla", "netherite_apple"), NETHERITEAPPLE);
+        Registry.register(Registry.ITEM, new Identifier("vanilla", "enchanted_netherite_apple", ENCHANTEDNETHERITEAPPLE);
         Registry.register(Registry.ITEM, new Identifier("vanilla", "platinum_apple"), PLATINUMAPPLE);
         Registry.register(Registry.ITEM, new Identifier("vanilla", "enchanted_platinum_apple"), ENCHANTEDPLATINUMAPPLE);
         //Ore Generation
